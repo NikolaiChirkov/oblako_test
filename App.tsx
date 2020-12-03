@@ -1,13 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, ScrollView, Text, View } from 'react-native';
+import Header  from "./src/Header";
+import List from "./src/List"
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView style={styles.container}>
+      <Header />
+      <List />
+    </ScrollView>
   );
 }
 
