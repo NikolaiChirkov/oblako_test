@@ -1,23 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, ScrollView, Text, View } from 'react-native';
-import Header  from "./src/Header";
-import List from "./src/List"
+import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
+import { Provider as StoreProvider } from 'react-redux';
+import MainPage from './src/MainPage';
+import store from './src/Redux/Store';
+
+const theme = DefaultTheme;
 
 export default function App() {
   return (
-    <ScrollView style={styles.container}>
-      <Header />
-      <List />
-    </ScrollView>
+    <StoreProvider store={store}>
+      <PaperProvider theme={theme}>
+        <MainPage />
+      </PaperProvider>
+    </StoreProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
