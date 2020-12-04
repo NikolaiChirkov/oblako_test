@@ -3,11 +3,11 @@ import { ScrollView } from 'react-native';
 import Header  from "./Partials/Header";
 import ToDoList from "./Partials/ToDoList";
 
-export default function App() {
+export default function Main() {
     return (
         <ScrollView>
           <Header />
-          <ToDoList />
+          <ToDoList/>
         </ScrollView>
     );
 }
