@@ -9,7 +9,11 @@ export default function ModalListItem({title = "Test"}) {
     return (
         <View style={PartialStyles.modalListItem}> 
             <Text>{title}</Text>
-            <IconButton icon="trash-can-outline" color={"rgb(178,34,34)"}></IconButton>
+            <IconButton 
+                icon="trash-can-outline" 
+                color={"rgb(178,34,34)"} 
+                onPress={() => console.log("delete item")} 
+            />
         </View>
     )
 }

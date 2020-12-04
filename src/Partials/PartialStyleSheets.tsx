@@ -12,7 +12,10 @@ const PartialStyles = StyleSheet.create({
         backgroundColor: "white",
         borderTopStartRadius: 10,
         borderTopEndRadius: 10,
-        height: "auto"
+        height: "auto",
+        width: "100%",
+        position: "absolute",
+        bottom: 0
     },
     modalListItem: {
         flexDirection: "row",
@@ -24,8 +27,10 @@ const PartialStyles = StyleSheet.create({
         borderTopStartRadius: 10,
     },
     modalInput: {
-        width: "90%",
-
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        paddingLeft: 5
     }
 });
 

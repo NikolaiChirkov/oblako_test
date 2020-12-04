@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput } from 'react-native';
-import { Appbar, Portal, Modal } from 'react-native-paper';
+import { Appbar, Portal, Modal, IconButton } from 'react-native-paper';
 import PartialStyles from './PartialStyleSheets';
 import ModalListItem from './ModalListItem';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 export default function Header() {
   const [editLists, setEditLists] = useState(false);
@@ -20,7 +21,14 @@ export default function Header() {
           contentContainerStyle={PartialStyles.modalContainer}
         >
           <ModalListItem />
-          <TextInput style={PartialStyles.modalInput} />
+          <View style={PartialStyles.modalInput}>
+            <TextInput placeholder="Новая категория" placeholderTextColor="gray"/>
+            <IconButton 
+              icon="plus" 
+              color={Colors.gray} 
+              onPress={() => console.log('add category')}
+            />
+          </View>
         </Modal>
       </Portal>
     </View>
