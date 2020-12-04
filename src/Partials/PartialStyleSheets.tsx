@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
 
 const PartialStyles = StyleSheet.create({
-    itemContainer: {
+    listItemContainer: {
         flexDirection: "row",
-        alignItems: "center"
+        alignItems: "center",
+        width: "100%"
     },
     modalContainer: {
         flexDirection: "column",
@@ -37,7 +38,30 @@ const PartialStyles = StyleSheet.create({
         margin: 5
     },
     modalNewTask: {
-        width: "100%"
+        flex: 1,
+        justifyContent: "flex-start",
+        width: "100%",
+        backgroundColor: "white",
+        position: "absolute",
+        top: 0,
+        left: 0,
+        height: "100%"
+    },
+    newTaskElement: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: 15
+    }, 
+    newTaskInput: {
+        height: 70,
+        paddingHorizontal: 15,
+        fontSize: 22
+    },
+    newTaskCategory: {
+        fontSize: 18,
+        paddingLeft: 15,
+        color: "gray"
     }
 });
 
