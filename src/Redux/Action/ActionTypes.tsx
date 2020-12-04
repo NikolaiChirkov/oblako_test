@@ -6,3 +6,5 @@ export const PATCH_LIST = "PATCH_LIST";
 export const POST_TASK = "POST_TASK";
 export const DELETE_TASK = "DELETE_TASK";
 export const PATCH_TASK = "PATCH_TASK";
+
+export const ADD_LIST = "ADD_LIST";
