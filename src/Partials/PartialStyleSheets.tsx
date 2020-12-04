@@ -35,6 +35,9 @@ const PartialStyles = StyleSheet.create({
         justifyContent: 'flex-end',
         alignSelf: 'flex-end',
         margin: 5
+    },
+    modalNewTask: {
+        width: "100%"
     }
 });
 
