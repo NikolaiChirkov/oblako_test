@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput } from 'react-native';
+import { View, TextInput } from 'react-native';
 import { Appbar, Portal, Modal, IconButton } from 'react-native-paper';
 import PartialStyles from './PartialStyleSheets';
 import ModalListItem from './ModalListItem';
@@ -22,7 +22,7 @@ export default function Header() {
         >
           <ModalListItem />
           <View style={PartialStyles.modalInput}>
-            <TextInput placeholder="Новая категория" placeholderTextColor="gray"/>
+            <TextInput placeholder="Новая категория" placeholderTextColor="lightgray"/>
             <IconButton 
               icon="plus" 
               color={Colors.gray} 
