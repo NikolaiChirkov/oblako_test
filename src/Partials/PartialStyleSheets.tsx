@@ -2,7 +2,6 @@ import {StyleSheet} from 'react-native';
 
 const PartialStyles = StyleSheet.create({
     itemContainer: {
-        flex: 1,
         flexDirection: "row",
         alignItems: "center"
     },
@@ -31,6 +30,11 @@ const PartialStyles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems: "center",
         paddingLeft: 5
+    },
+    fab: {
+        justifyContent: 'flex-end',
+        alignSelf: 'flex-end',
+        margin: 5
     }
 });
 
