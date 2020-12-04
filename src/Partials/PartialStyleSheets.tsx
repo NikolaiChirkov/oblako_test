@@ -32,9 +32,9 @@ const PartialStyles = StyleSheet.create({
         paddingLeft: 5
     },
     fab: {
-        position: "absolute",
-        right: 0,
-        bottom: 0
+        justifyContent: 'flex-end',
+        alignSelf: 'flex-end',
+        margin: 5
     }
 });
 
