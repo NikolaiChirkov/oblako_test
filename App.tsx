@@ -1,8 +1,8 @@
 import React from 'react';
 import { Colors, DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 import { Provider as StoreProvider } from 'react-redux';
-import MainPage from './src/MainPage';
-import store from './src/Redux/Store';
+import Main from './src/Main';
+import Store from './src/Redux/Store';
 
 const theme = {
   ...DefaultTheme,
@@ -15,9 +15,9 @@ const theme = {
 
 export default function App() {
   return (
-    <StoreProvider store={store}>
+    <StoreProvider store={Store}>
       <PaperProvider theme={theme}>
-        <MainPage />
+        <Main />
       </PaperProvider>
     </StoreProvider>
   );
